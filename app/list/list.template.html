@@ -3,7 +3,8 @@
     <span class="list__header">Browse Swag</span>
     
     <div class="list__swag-container">
-      <!-- Swag Here -->
+      <swag ng-repeat="object in listCtrl.swag" item="object" action="listCtrl.goToDetails(object.id)" action-label="details"> 
+      </swag>
     </div>
   </div>
 </div>
